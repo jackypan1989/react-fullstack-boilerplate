@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    [
+      "import", {
+        "libraryName": "antd",
+        "libraryDirectory": "es"
+      }
+    ]
+  ]
+}

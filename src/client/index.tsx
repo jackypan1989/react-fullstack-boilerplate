@@ -1,9 +1,14 @@
 import React from 'react'
 import { render } from 'react-dom'
+import App from './App'
 
-const App = () => 
-  <div>
-    hello
-  </div>
+function renderApp() {
+  const App = require('./App').default
+  render(<App />, document.getElementById('root'))
+}
 
-render(<App/>, document.getElementById('root'))
+renderApp()
+
+if ((module as any).hot) {
+  (module as any).hot.accept(renderApp)
+}

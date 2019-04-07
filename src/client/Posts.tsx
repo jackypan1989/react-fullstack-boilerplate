@@ -18,7 +18,7 @@ const Posts = (props) => {
   const { data, loading, error } = useQuery(GET_POSTS)
   const { posts } = data
 
-  if (loading) return 'Loading...'
+  if (loading) return <div>Loading...</div>
 
   return <div style={{ background: '#ECECEC', padding: '16px', display: 'flex' }}>
     {map(post =>

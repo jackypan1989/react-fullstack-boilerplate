@@ -9,7 +9,6 @@ A boilerplate with all you wanted.
 - [x] parcel
 - [x] react-hot-loader
 - [ ] electron (APP)
-- [ ] nextjs (SSR)
 
 ### language tool
 
@@ -33,3 +32,4 @@ A boilerplate with all you wanted.
 - [ ] gql codegen with ts check
 - [ ] more page example
 - [ ] test
+- [ ] nextjs or other SSR

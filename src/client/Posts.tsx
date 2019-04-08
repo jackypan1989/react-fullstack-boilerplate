@@ -20,13 +20,18 @@ const Posts = (props) => {
 
   if (loading) return <div>Loading...</div>
 
-  return <div style={{ background: '#ECECEC', padding: '16px', display: 'flex' }}>
-    {map(post =>
-      <Card title={post.title} bordered={false} style={{ width: 300, margin: '16px' }}>
-        <p>{post.content}</p>
-      </Card>
-    , posts)}
+  return <div>
+    <h1>Boilerplate for React + Parcel + Electron</h1>
+    <div style={{ background: '#ECECEC', padding: '16px', display: 'flex' }}>
+      {map(post =>
+        <Card key={post.id} title={post.title} bordered={false} style={{ width: 300, margin: '16px' }}>
+          <p>{post.content}</p>
+        </Card>
+      , posts)}
+    </div>
   </div>
+  
+  
 }
 
 export default Posts
